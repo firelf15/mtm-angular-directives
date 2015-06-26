@@ -1,0 +1,32 @@
+var myApp = angular.module('myApp', []);
+
+myApp.controller('MyController', function MyController($scope) {
+    $scope.messages = [
+  {
+    "character" : "Kermit",
+    "quote" : "It's not easy being green.",
+    "image" : "kermit.jpg"
+  },
+    {
+    "character" : "Shaggy",
+    "quote" : "Scooby Dooby Doo!",
+    "image" : "shaggy.gif"
+  },  {
+    "character" : "Fred",
+    "quote" : "Yabba Dabba Doo!",
+    "image" : "fred.png"
+  },  {
+    "character" : "Cookie Monster",
+    "quote" : "'C' is for cookie. That's good enough for me.",
+    "image" : "cookie.jpg"
+  },  {
+    "character" : "Dory",
+    "quote" : "Just keep swimming. Just keep swimming.",
+    "image" : "dory.jpg"
+  },  {
+    "character" : "Buzz Lightyear",
+    "quote" : "To inifinity and beyond!",
+    "image" : "buzz.jpg"
+  }
+]
+});

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Toon Town in Angular</title>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="controllers.js"></script>
+    <style>
+        .cf {
+            clear: both;
+            }
+        .tn {
+            padding: 0 10px 10px 10px;
+            margin: 0 10px 10px 10px;
+            width: 140px;
+            height: auto;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+      <div ng-controller = "MyController">
+
+            <p class="cf" ng-repeat="item in messages"><img src="img-bin/{{ item.image }}" class="tn"><quote>"{{ item.quote }}"</quote><br>
+                <citation>- {{ item.character }}</citation>
+            </p>
+
+      </div>
+</body>
+</html>
